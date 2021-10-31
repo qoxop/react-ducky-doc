@@ -4,9 +4,11 @@ import { thunkMiddleware } from 'react-ducky';
 type ArrayItem<T> = T|Array<T>;
 
 // @ts-ignore
-const composeEnhancers = typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?   window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) : compose;
+const composeEnhancers = typeof window === 'object' && window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ ?
+    // @ts-ignore
+    window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__({}) :
+    compose;
 
-// reducer mapping
 const mapping = {}
 
 export const store = createStore(

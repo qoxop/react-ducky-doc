@@ -65,7 +65,7 @@ function User() {
 
 ## DEMO: Todo-List
 
-下面几个篇章，将使用 `react-ducky` 从零开始搭建一个 todo-list 的应用
+下面几个篇章，将使用 `react-ducky` 从零开始搭建一个简易版的 todo-list 应用
 
 <div style={{padding: 16, margin: 16, border: '1px solid #999'}}>
   <TodoList />

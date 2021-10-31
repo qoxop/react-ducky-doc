@@ -4,7 +4,7 @@ sidebar_label: 介绍
 sidebar_position: 1
 ---
 
-⚡️ React-Ducky 是一个基于MVC思想而设计的一个 React 工具库。
+⚡️ React-Ducky 是一个基于MVC思想而设计的一个 React & Redux 工具库。
 
 ## 特性
 

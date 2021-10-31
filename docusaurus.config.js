@@ -8,7 +8,7 @@ const path = require('path');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'React-Ducky',
-  tagline: 'Dinosaurs are cool',
+  tagline: '让你可以使用填鸭式的方式去编写 react/redux 代码 \n 但它简洁又不失自由，受 MVC 思想启发而设计～',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -67,7 +67,7 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/qoxop/react-ducky',
             label: 'GitHub',
             position: 'right',
           },

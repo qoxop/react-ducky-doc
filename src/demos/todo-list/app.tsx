@@ -14,14 +14,11 @@ export class TodoController extends ReduxControler {
     useInit() {
         const { filter, todos } = useTodoModel();
         const todoArr = useMemo(() => {
-            const data: TodoList.TodoItem[] = [];
-            Object.keys(todos).forEach(key => {
-                const todo = todos[key];
-                if ((filter === 'unfinished' && !todo.finished) || (filter === 'finished' && todo.finished) || (filter === 'all')) {
-                    data.push(todo);
-                }
-            });
-            return data;
+            switch(filter) {
+                case 'finished': return todos.filter(todo => todo.finished);
+                case 'unfinished': return todos.filter(todo => !todo.finished);
+                default: return todos;
+            }
         }, [todos, filter]);
         return { filter, todos: todoArr }
     }

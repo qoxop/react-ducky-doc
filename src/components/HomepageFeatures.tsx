@@ -16,32 +16,32 @@ type FeatureItem = {
 
 const FeatureList: FeatureItem[] = [
   {
-    title: 'Easy to Use',
+    title: 'Redux Hooks Api Hacks',
     image: '/img/undraw_docusaurus_mountain.svg',
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        为了帮助那些暂时升级不了 <code>react-redux</code> 的项目使用上 Hook 写法，而实现了一套接口和表现行为与 <code>react-redux</code> 一致的 Hook API。
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: '快捷简单的 Redux 数据建模',
     image: '/img/undraw_docusaurus_tree.svg',
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        使用 <code>createModel</code> 方法，将你的<code>StateType</code>、<code>reducer</code>、<code>actions</code> 等组织在了一切。
+        避免你的 <code>Redux</code> 代码变得臃肿。
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: '使用 Class+Hook 编写 Controller',
     image: '/img/undraw_docusaurus_react.svg',
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        面对复杂组件，class 写法让你的业务代码分割在各个生命周期，而使用 hooks 方式则容易出现作用域变量依赖问题且代码且代码噪音过多。
+        <br />
+        <code>Controller</code> Api 可以让你使用用 Class 组织代码，又可以用 hook 抽象业务逻辑。
       </>
     ),
   },
