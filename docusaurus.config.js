@@ -25,13 +25,13 @@ const config = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl: 'https://github.com/qoxop/react-ducky-doc/docs/',
+          editUrl: 'https://github.com/qoxop/react-ducky-doc/tree/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           editUrl:
-            'https://github.com/qoxop/react-ducky-doc/blog/',
+            'https://github.com/qoxop/react-ducky-doc/tree/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
