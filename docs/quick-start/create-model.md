@@ -8,7 +8,7 @@ sidebar_position: 3
 - 每一个待办项需要有个字段来标识完成状态(已完成或未完成)
 - 待办列表需要有一个过滤器，通过完成状态来过滤列表项
 
-## 使用 Ts 定义数据类型
+## ✏️ 使用 Ts 定义数据类型
 
 
 ```ts title=src/todo-list/model.ts
@@ -22,7 +22,7 @@ export namespace TodoList {
 }
 ```
 
-## 使用 createModel 创建 Model
+## 🤖 创建 Model
 
 ```ts title=src/todo-list/model.ts
 import { createModel, PayloadAction } from "react-ducky";
@@ -85,13 +85,13 @@ export { actions, reducer, getState, useModel }
 
 自此，你已经创建好了一个功能完整且拥有良好类型提醒的 Model，用来支持后续应用的开发。
 
-## 更多
+## ✨ 更多
 
 createModel 还有一些其他的特性，更详细的介绍请到 API Reference 中查看
 
-## 参考
+## 🍀 参考
 
-🙏🙏 `createModel` 的设计借鉴了:
-- [Dva](https://dvajs.com/guide/concepts.html#models) 的 model 写法
+😇  `createModel` 的设计借鉴了:
+- [Dva](https://dvajs.com/guide/concepts.html#models) 的 model 写法。
 - [redux-toolkits](https://redux-toolkit.js.org/api/createSlice) 的 `creaetSlice` API。
 
