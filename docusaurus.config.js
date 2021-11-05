@@ -5,19 +5,20 @@ const lightCodeTheme = require('prism-react-renderer/themes/github');
 const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const path = require('path');
 
+const baseUrl = process.env.NODE_ENV !== 'production' ? '/' : '/react-ducky-doc/';
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'React-Ducky',
   tagline: '让你可以使用填鸭式的方式去编写 react/redux 代码 \n 但它简洁又不失自由，受 MVC 思想启发而设计～',
-  url: 'https://qoxop.github.io.',
-  baseUrl: '/react-ducky-doc/',
+  url: 'https://qoxop.github.io',
+  baseUrl,
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'qoxop', // Usually your GitHub org/user name.
   projectName: 'react-ducky-doc', // Usually your repo name.
   deploymentBranch: 'gh-pages',
-  trailingSlash: false,
   presets: [
     [
       '@docusaurus/preset-classic',
