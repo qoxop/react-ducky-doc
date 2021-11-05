@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_ducky_doc=self.webpackChunkreact_ducky_doc||[]).push([[930],{5290:function(c){c.exports=JSON.parse('{"allTagsPath":"/react-ducky-doc/blog/tags","slug":"/react-ducky-doc/blog/tags/class","name":"class","count":1,"permalink":"/react-ducky-doc/blog/tags/class"}')}}]);
