@@ -65,7 +65,7 @@ const config = {
             position: 'left',
             label: '指南'
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          {to: '/blog', label: '文章', position: 'left'},
           {
             href: 'https://github.com/qoxop/react-ducky',
             label: 'GitHub',
@@ -75,47 +75,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        links: [
-          {
-            title: 'Docs',
-            items: [
-              {
-                label: 'Tutorial',
-                to: '/docs/intro',
-              },
-            ],
-          },
-          {
-            title: 'Community',
-            items: [
-              {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
-              },
-              {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
-              },
-              {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
-              },
-            ],
-          },
-          {
-            title: 'More',
-            items: [
-              {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
-                label: 'GitHub',
-                href: 'https://github.com/qoxop/react-ducky-doc',
-              },
-            ],
-          },
-        ],
+        links: [],
         copyright: `Copyright © ${new Date().getFullYear()} qoxop, Inc. Built with Docusaurus.`,
       },
       prism: {
