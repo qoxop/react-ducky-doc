@@ -87,7 +87,7 @@ export { actions, reducer, getState, useModel }
 
 ## ✨ 更多
 
-createModel 还有一些其他的特性，更详细的介绍请到 API Reference 中查看
+createModel 还有一些其他的特性，更详细的介绍请到 [API 文档](/docs/API-Reference/reducer-and-actions/createModel) 中查看
 
 ## 🍀 参考
 

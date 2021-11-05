@@ -9,7 +9,7 @@ export class TodoController extends ReduxControler {
         super(store);
         this.actions = bindActionCreators(actions, this.dispatch);
     }
-    useInit() {
+    useHooks() {
         const { filter, todos } = useTodoModel();
         const todoArr = useMemo(() => this.filterTodos(todos, filter), [todos, filter]);
         return { filter, todos: todoArr }

@@ -20,7 +20,7 @@ export class TodoController extends ReduxControler {
         super(store);
         this.actions = bindActionCreators(actions, this.dispatch);
     }
-    useInit() {
+    useHooks() {
         const { filter, todos } = useTodoModel();
         const todoArr = useMemo(() => this.filterTodos(todos, filter), [todos, filter]);
         return { filter, todos: todoArr }
@@ -71,7 +71,7 @@ export function TodoApp() {
    - **forceUpdate:** 强制更新组件
    - **store:** redux 的 store 对象，` ReduxController ` 才有
    - **dispatch:** redux 的 dispatch 方法，` ReduxController ` 才有，可以用于直接触发一个 ` action `，也可以传递给 ` bindActionCreators ` 进行绑定
-2. ` useReduxController ` 会调用 ` TodoController ` 的 ` useInit ` 方法，将 ` useInit ` 返回值放在自身返回值数组的第二项，第一项是 ` Controller ` 的实例对象。
+2. ` useReduxController ` 会调用 ` TodoController ` 的 ` useHooks ` 方法，将 ` useHooks ` 返回值放在自身返回值数组的第二项，第一项是 ` Controller ` 的实例对象。
 
 这样，视图组件就可以使用 `Controller` 上定义的一切属性和方法，同时不需要去管理生命周期和业务流程等复杂逻辑。
 

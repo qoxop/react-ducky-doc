@@ -1,6 +1,6 @@
 ---
 sidebar_position: 1
-sidebar_label: base
+sidebar_label: 兼容 API
 ---
 
 # 兼容 API
