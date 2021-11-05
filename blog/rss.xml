@@ -2,14 +2,14 @@
 <rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/">
     <channel>
         <title>React-Ducky Blog</title>
-        <link>https://qoxop.github.io./react-ducky-doc/blog</link>
+        <link>https://qoxop.github.io/react-ducky-doc/blog</link>
         <description>React-Ducky Blog</description>
         <lastBuildDate>Fri, 05 Nov 2021 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <item>
             <title><![CDATA[React 组件开发—从Class到Hooks]]></title>
-            <link>https://qoxop.github.io./react-ducky-doc/blog/React 组件开发—从Class到Hooks</link>
+            <link>https://qoxop.github.io/react-ducky-doc/blog/React 组件开发—从Class到Hooks</link>
             <guid>React 组件开发—从Class到Hooks</guid>
             <pubDate>Fri, 05 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></description>

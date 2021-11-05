@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://qoxop.github.io./react-ducky-doc/blog</id>
+    <id>https://qoxop.github.io/react-ducky-doc/blog</id>
     <title>React-Ducky Blog</title>
     <updated>2021-11-05T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://qoxop.github.io./react-ducky-doc/blog"/>
+    <link rel="alternate" href="https://qoxop.github.io/react-ducky-doc/blog"/>
     <subtitle>React-Ducky Blog</subtitle>
-    <icon>https://qoxop.github.io./react-ducky-doc/img/favicon.ico</icon>
+    <icon>https://qoxop.github.io/react-ducky-doc/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[React 组件开发—从Class到Hooks]]></title>
         <id>React 组件开发—从Class到Hooks</id>
-        <link href="https://qoxop.github.io./react-ducky-doc/blog/React 组件开发—从Class到Hooks"/>
+        <link href="https://qoxop.github.io/react-ducky-doc/blog/React 组件开发—从Class到Hooks"/>
         <updated>2021-11-05T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet]]></summary>
         <content type="html"><![CDATA[<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque elementum dignissim ultricies. Fusce rhoncus ipsum tempor eros aliquam consequat. Lorem ipsum dolor sit amet</p>]]></content>
