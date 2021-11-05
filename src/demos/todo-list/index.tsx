@@ -1,10 +1,3 @@
-import React from 'react';
-import useIsBrowser from '@docusaurus/useIsBrowser';
+import LoadingHoc from 'src/components/LoadingHoc';
 
-const Loading = () => <div>loading</div>;
-
-export default function() {
-    const isBrowser = useIsBrowser();
-    const LoadingComponent = isBrowser ? React.lazy(() => import('./bundle')) : Loading;
-    return <LoadingComponent />
-}
+export default LoadingHoc(() => import('./bundle'));
