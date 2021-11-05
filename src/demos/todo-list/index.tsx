@@ -1,7 +1,10 @@
-import { injectReduce } from 'src/store';
-import { reducer, name } from './model';
-import { TodoApp } from './app';
+import React from 'react';
+import useIsBrowser from '@docusaurus/useIsBrowser';
 
-injectReduce({ key: name, reducer });
+const Loading = () => <div>loading</div>;
 
-export default TodoApp;
+export default function() {
+    const isBrowser = useIsBrowser();
+    const LoadingComponent = isBrowser ? React.lazy(() => import('./bundle')) : Loading;
+    return <LoadingComponent />
+}

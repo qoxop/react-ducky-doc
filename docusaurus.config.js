@@ -9,13 +9,14 @@ const path = require('path');
 const config = {
   title: 'React-Ducky',
   tagline: '让你可以使用填鸭式的方式去编写 react/redux 代码 \n 但它简洁又不失自由，受 MVC 思想启发而设计～',
-  url: 'https://your-docusaurus-test-site.com',
-  baseUrl: '/',
+  url: 'https://qoxop.github.io.',
+  baseUrl: '/react-ducky-doc/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'qoxop', // Usually your GitHub org/user name.
+  projectName: 'react-ducky-doc', // Usually your repo name.
+  deploymentBranch: 'gh-pages',
 
   presets: [
     [
