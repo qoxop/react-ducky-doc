@@ -17,7 +17,7 @@ const config = {
   organizationName: 'qoxop', // Usually your GitHub org/user name.
   projectName: 'react-ducky-doc', // Usually your repo name.
   deploymentBranch: 'gh-pages',
-
+  trailingSlash: false,
   presets: [
     [
       '@docusaurus/preset-classic',
