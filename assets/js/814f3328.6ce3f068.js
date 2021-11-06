@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkreact_ducky_doc=self.webpackChunkreact_ducky_doc||[]).push([[535],{5641:function(e){e.exports=JSON.parse('{"title":"Recent posts","items":[{"title":"React \u7ec4\u4ef6\u5f00\u53d1\u2014\u4eceClass\u5230Hooks","permalink":"/react-ducky-doc/blog/React \u7ec4\u4ef6\u5f00\u53d1\u2014\u4eceClass\u5230Hooks"}]}')}}]);

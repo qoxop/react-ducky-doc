@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkreact_ducky_doc=self.webpackChunkreact_ducky_doc||[]).push([[400],{8193:function(c){c.exports=JSON.parse('{"allTagsPath":"/react-ducky-doc/blog/tags","slug":"/react-ducky-doc/blog/tags/typescript","name":"Typescript","count":1,"permalink":"/react-ducky-doc/blog/tags/typescript"}')}}]);
