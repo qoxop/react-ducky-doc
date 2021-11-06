@@ -4,7 +4,7 @@ sidebar_label: createModel
 ---
 # createModel
 
-`createModel` 函数接受初始状态、reducer函数对象、异步数据函数对象和 Model 名称，并自动生成与 `reducer` 和状态对应的 `actionCreators` 和 `action-type`。
+**createModel** 函数接受初始状态、**caseReducer** 对象、异步数据函数对象和 Model 名称，并自动生成与 `reducer` 函数、 `actionCreators` 对象 和 `asyncActionCreators` 对象。
 
 这个API参照了 `redux-toolki` 的 `createSlice` 方法，并对其进行了扩展，使其支持数据持久化缓存配置，异步元数据获取自动生成异步Actions等新特性。
 
@@ -72,7 +72,7 @@ type CreateModelOption = {
 ```
 ### `reducers`
 
-一个包含 Redux“case reducer”函数的对象（用于处理特定动作类型的函数，相当于 switch 中的单个 case 语句）。这个对象将被传递给 `createReducer`，因此 reducer 可以安全地“改变”它们被赋予的状态。
+一个包含 Redux **case reducer** 函数的对象(用于处理特定动作类型的函数，相当于 switch 中的单个 case 语句)。这个对象将被传递给 `createReducer`，因此 reducer 可以安全地“改变”它们被赋予的状态。
 
 对象中的键将被用于生成字符串类型的 `action type` ，生成格式是 `[name]/[key]`。
 
@@ -123,7 +123,7 @@ const todosModel = createModel({
 
 ### `atomFetchers`
 
-如果你的 initState 类型中存在一些字段是 `AtomObject` 类型的，createModel 会要求你提供对应的数据获取方法，然后根据你提供的数据获取方法自动生成对应的异步的 `ActionsCreator`
+如果你的 **initialState** 对象中存在一些字段是 `AtomObject` 类型的，createModel 会要求你提供对应的数据获取方法，然后根据你提供的数据获取方法自动生成对应的异步的 `ActionsCreator`
 
 ```ts
 import { createModel, PayloadAction, AtomObject } from 'react-ducky';
@@ -147,7 +147,7 @@ const userModel = createModel<UserState>({
 
 ### `extraReducers`
 
-用于响应当前 `Model` 生成的 `actions` 之外的其他 `actions`。比如，你需要在退出登录这个动作触发时重置当前 `Model` 的数据，像这种场景使用 `extraReducers` 就会特别方便。
+用于响应当前 **Model** 生成的 `actions` 之外的其他 `actions`。比如，你需要在退出登录这个动作触发时重置当前 **Model** 的数据，像这种场景使用 `extraReducers` 就会特别方便。
 
 `extraReducers` 支持键值对对象写法和回调写法。
 
@@ -183,7 +183,7 @@ const userModel = createModel<UserState>({
 
 ### `persistence`
 
-用于选择使用什么存储方式进行持久化缓存，目前可选的就俩种 —— `'local'|'sesstion'`, 分别对应 localStorage 和  sessionStorage
+用于选择使用什么存储方式进行持久化缓存，目前可选的就两种 —— `'local'|'sesstion'`, 分别对应 localStorage 和  sessionStorage。
 
 ### `persistenceKey`
 
@@ -203,6 +203,6 @@ export type Model<State> = {
     actions: ActionCreators;
     getState: () => State;
     useModel: (selector, config?: { isPending, isEqual }) => any;
-    atomFetchers?: AsyncActionCreators
+    atomActions?: AsyncActionCreators
 }
 ```

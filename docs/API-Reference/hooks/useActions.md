@@ -5,7 +5,7 @@ sidebar_label: useActions
 
 ## useActions
 
-对 `model` 的 `actions` 和 `fetchAtoms` 对象进行 `bindActionCreators`
+对 **Model** 的 `actions` 和 `atomActions` 对象进行 `bindActionCreators`
 
 ```ts title="useActions 源码"
 import { bindActionCreators, Store } from 'redux';

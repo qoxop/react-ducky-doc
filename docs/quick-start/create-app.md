@@ -53,7 +53,7 @@ export const injectReduce = (reducers: ArrayItem<{ key: string; reducer: Reducer
 ```
 ## 改造 main.tsx
 把 App 包裹上 一个 `ReduxProvider` 组件，确保其他 API 能正常使用。
-```tsx {3,4,10,12} title=src/main.tsx
+```tsx {3,4,9,11} title=src/main.tsx
 import React from 'react'
 import ReactDOM from 'react-dom'
 import { ReduxProvider } from 'react-ducky';
